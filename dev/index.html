@@ -8,9 +8,59 @@
     
 </head>
 <body>
+    
+    <header>
+
+    </header>
     <h1>hello</h1>
     <button>실행</button>
-    <p>크리가 뜰 수 있음</p>
+    <input type="text" id="sub1" oninput="submit()">
+    <input type="text" id="sub2" oninput="submit2()">
+    <p class="alert_id" style="display:none;">유저의 아이디가 다릅니다</p>
+<section id="section">
+    <div id="charactor" class="stat">
+        <table border="1px" id="user1_info">
+            <colgroup>
+            <col width="30%">
+            <col width="70%">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>이름</td>
+                    <td><span></span></td>
+                </tr>
+                <tr>
+                    <td>체력</td>
+                    <td><span></span></td>
+                </tr>
+                <tr>
+                    <td>공격력</td>
+                    <td><span></span></td>
+                </tr>
+                <tr>
+                    <td>회피력</td>
+                    <td><span></span></td>
+                </tr>
+                <tr>
+                    <td>크리티컬 확률</td>
+                    <td><span></span></td>
+                </tr>
+                <tr>
+                    <td>치명타피해</td>
+                    <td><span></span></td>
+                </tr>
+                <tr>
+                    <td>이동속도</td>
+                    <td><span></span></td>
+                </tr>
+                <tr>
+                    <td>공격속도</td>
+                    <td><span></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
     <div id="export">
         <ul class="atk">
             <li>무기 공격력은 <span></span>입니다</li>
@@ -29,9 +79,12 @@
         </ul>
         <p class="last_dmg">최종 피해량은<span></span>입니다</p>
     </div>
+    
+</section>
+    
 
 
-
+    <script src="js/test.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

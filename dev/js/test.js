@@ -20,6 +20,16 @@ var charInfo = {
         "cri":0.15,
         "speed":110,
         "atS":1.1,
+    },
+    "sh":{
+        "name":"성훈",
+        "hp":100,
+        "atk": 10,
+        "dfe": 10,
+        "dodge": 0.1,
+        "cri":0.15,
+        "speed":100,
+        "atS":1,
     }
 }
 

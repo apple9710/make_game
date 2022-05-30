@@ -23,52 +23,27 @@ var charInfo = {
     }
 }
 
-
-
-
-
 // user1
-var statKind = ["name","hp","atk","dfe","dodge" ,"cri" ,"speed" ,"at5"]
 var user1 = document.getElementById('user1_info')
 var us1Stat = user1.querySelectorAll('span')
 
 function submit(){
     var inputInfo = document.getElementById('sub1').value
-    
+    var arr = []
+
     for(const key in charInfo){
-        
+        var arr2 = []
         if(inputInfo == key){
             for(let k in charInfo[key]){
-                var arr = []
-                
-                arr = [charInfo[key][k]]
-                var arr2 = []
-                
-                console.log(arr)
-                for(let idx = 0; idx<statKind.length; idx++){
-                    arr2 += arr
-                    console.log(arr2)
-                }
-                
-                for(let i = 0;i<user1.length; i++){
-
-                    user1[i].innerHTML = arr[i]
-
-                }
-                
-                
-                // for(let i = 0 ; i<us1Stat.length; i++){
-                //     console.log
-                //     us1Stat[i].innerHTML = k[i]
-                
-                // }
+                arr.push(charInfo[key][k])
+                arr2 += arr
             }
-
-            
         }
     }
-
-
+    console.log(arr)
+    for(let i = 0; i<arr.length; i++){
+        us1Stat[i].innerHTML = arr[i]
+    }
 }
 
 function submit2(){
